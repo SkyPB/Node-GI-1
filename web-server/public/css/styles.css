@@ -1,0 +1,119 @@
+body,
+h1,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+
+.main-content {
+  flex-grow: 1;
+}
+
+header {
+  margin-bottom: 20px;
+}
+/* Navigation Links */
+nav a {
+  color: #3498db;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #2ecc71;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 64px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.portrait {
+  width: 250px;
+  height: 375px;
+}
+
+/* Form Stylying */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 250px;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2ecc71;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Footer Styling */
+footer {
+  color: #555;
+  border-top: 1px solid #1712122b;
+  padding: 16px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
