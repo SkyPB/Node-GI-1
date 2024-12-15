@@ -3,26 +3,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-    <link rel="icon" href="/img/cloud.jpg">
+    <link rel="icon" href="/img/cloud.jpg" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <section class ="main-content">
-          {{>header}}
+    <section class="main-content">
+      {{>header}}
 
-          <p>Use this site to get your weather</p>
+      <p>Use this site to get your weather</p>
 
-          <form>
-            <input type="text" placeholder="Location">
-            <button>Search</button>
-          </form>
+      <form action="/weather" method="get">
+        <input
+          type="text"
+          name="address"
+          placeholder="Enter location"
+        />
+        <!-- Dropdown for Units -->
+        <select name="units">
+          <option value="f" selected>Fahrenheit (°F)</option>
+          <option value="m">Celsius (°C)</option>
+          <option value="s">Kelvin (K)</option>
+        </select>
+        <!-- Submit Button -->
+        <button type="submit">Get Weather</button>
+      </form>
 
-          <p id="message-1"></p>
-          <p id="message-2"></p>
+      <p id="message-1"></p>
+      <p id="message-2"></p>
 
     </section>
 
-     {{>footer}}
+    {{>footer}}
 
     <script src="/js/app.js"></script>
   </body>
